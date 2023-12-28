@@ -47,7 +47,7 @@ const Hero = () => {
               beautiful, responsive and accessible websites and applications.
             </p>
           </div>
-          <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+          <div className="hidden lg:block lg:mt-0 lg:col-span-5">
             <img
               className="rounded"
               src="https://cdn.dribbble.com/users/1818304/screenshots/6601989/rick__dribbble.gif"
