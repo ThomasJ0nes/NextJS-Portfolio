@@ -22,7 +22,7 @@ export function DialogDemo() {
         <DialogHeader>
           <DialogTitle>Hey, Send Me a Message</DialogTitle>
           <DialogDescription>
-            Send me a message and I'll get back to you as soon as possible.
+            Send me a message and will get back to you as soon as possible.
           </DialogDescription>
         </DialogHeader>
         <div className="grid gap-4 py-4">
