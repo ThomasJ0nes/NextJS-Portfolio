@@ -51,6 +51,41 @@ export function DialogDemo() {
         // Data successfully saved
         // You might want to show a success message or perform other actions here
         setSuccess(true); // Set success state to true
+
+        const timestamp = new Date().toLocaleString(); // Get the current timestamp
+        const emailData = {
+          to: "tjonesbusiness26@gmail.com",
+          from: "tomjones@ecryptify.com",
+          subject: "New Portfolio Contact Form Message!",
+          text: `
+            New Portfolio contact form submission on ${timestamp}!
+            Email: ${formData.email}
+            Subject : ${formData.subject}
+            Message: ${formData.message}
+          `,
+        };
+
+        try {
+          const response = await fetch(
+            "https://us-central1-ecryptify-4f739.cloudfunctions.net/emailSend",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(emailData),
+            }
+          );
+
+          if (response.ok) {
+          } else {
+            // Handle unsuccessful email sending
+            console.error("Error sending email");
+          }
+        } catch (error) {
+          // Handle fetch error
+          console.error("Fetch error:", error);
+        }
       } else {
         // Handle error
       }
