@@ -140,6 +140,7 @@ export function DialogDemo() {
                 <Input
                   id="email"
                   name="email"
+                  required
                   type="email"
                   placeholder="tomj@dev.com"
                   className="col-span-3"
@@ -154,6 +155,7 @@ export function DialogDemo() {
                 <Input
                   id="subject"
                   name="subject"
+                  required
                   placeholder="Web Development Inquiry"
                   className="col-span-3"
                   value={formData.subject}
@@ -166,6 +168,7 @@ export function DialogDemo() {
                 </Label>
                 <Textarea
                   name="message"
+                  required
                   className="col-span-3"
                   placeholder="Type your message here."
                   value={formData.message}
