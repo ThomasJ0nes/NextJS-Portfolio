@@ -13,7 +13,7 @@ export default function Project() {
                 Ecryptify
               </h1>
               <p className="mt-6 text-xl leading-8 ">
-                Ecryptify is a interactive web app that i built to support my
+                Ecryptify is an interactive web app that I built to support my
                 web3 and blockchain recruitment company.
               </p>
             </div>
@@ -30,9 +30,9 @@ export default function Project() {
           <div className="lg:pr-4">
             <div className="max-w-xl text-base leading-7 lg:max-w-lg">
               <p>
-                Its still in development, but i have built many features lile a
+                Its still in development, but I have built many features like a
                 automated newsletter using firebase functions. Dynamic blog and
-                job post creation, behinf a admin dashboard. Contact forms with
+                job post creation, behind a admin dashboard. Contact forms with
                 email alerts with more planned on the way.
               </p>
               <ul role="list" className="mt-8 space-y-8 ">
@@ -40,8 +40,8 @@ export default function Project() {
                   <span>
                     <strong className="font-bold underline">NextJS -</strong>{" "}
                     The site is built using NextJS 13.5, NextJs is great for
-                    building fast scalable web apps and hanldes intergration
-                    nicely ike framer motion aniamtions i have used throught the
+                    building fast scalable web apps and handles intergration
+                    nicely like framer motion animations I have used throughout the
                     site.
                   </span>
                 </li>
