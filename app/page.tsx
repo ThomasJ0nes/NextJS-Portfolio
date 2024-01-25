@@ -1,3 +1,4 @@
+import LFGHO_Project from "@/components/ProjectLFGHO";
 import Accordion from "@/components/accordion";
 import Footer from "@/components/footer";
 import Hero from "@/components/hero";
@@ -36,6 +37,7 @@ export default function Home() {
       <Hero />
       <TechStack />
       <Project />
+      <LFGHO_Project />
       <main className="relative mb-10 flex flex-col justify-center overflow-hidden">
         <div className="w-full max-w-2xl mx-auto">
           <h1 className="text-2xl font-bold  mb-4 text-center">Questions</h1>
