@@ -39,58 +39,46 @@ export function DialogDemo() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true); // Set loading state to true
-    try {
-      const response = await fetch("/api/datasub", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-      if (response.ok) {
-        // Data successfully saved
-        // You might want to show a success message or perform other actions here
-        setSuccess(true); // Set success state to true
 
-        const timestamp = new Date().toLocaleString(); // Get the current timestamp
-        const emailData = {
-          to: "tjonesbusiness26@gmail.com",
-          from: "tomjones@ecryptify.com",
-          subject: "New Portfolio Contact Form Message!",
-          text: `
+    try {
+      // Data successfully saved
+      // You might want to show a success message or perform other actions here
+      setSuccess(true); // Set success state to true
+
+      const timestamp = new Date().toLocaleString(); // Get the current timestamp
+      const emailData = {
+        to: "tjonesbusiness26@gmail.com",
+        from: "tomjones@ecryptify.com",
+        subject: "New Portfolio Contact Form Message!",
+        text: `
             New Portfolio contact form submission on ${timestamp}!
             Email: ${formData.email}
             Subject : ${formData.subject}
             Message: ${formData.message}
           `,
-        };
+      };
 
-        try {
-          const response = await fetch(
-            "https://us-central1-ecryptify-4f739.cloudfunctions.net/emailSend",
-            {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify(emailData),
-            }
-          );
-
-          if (response.ok) {
-          } else {
-            // Handle unsuccessful email sending
-            console.error("Error sending email");
+      try {
+        const response = await fetch(
+          "https://us-central1-ecryptify-4f739.cloudfunctions.net/emailSend",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(emailData),
           }
-        } catch (error) {
-          // Handle fetch error
-          console.error("Fetch error:", error);
+        );
+
+        if (response.ok) {
+        } else {
+          // Handle unsuccessful email sending
+          console.error("Error sending email");
         }
-      } else {
-        // Handle error
+      } catch (error) {
+        // Handle fetch error
+        console.error("Fetch error:", error);
       }
-    } catch (error) {
-      console.error("Error:", error);
     } finally {
       setLoading(false); // Set loading state back to false
     }
