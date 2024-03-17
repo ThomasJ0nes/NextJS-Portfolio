@@ -13,7 +13,7 @@ const TechStack = () => {
         <FadeIn>
           <div className="max-w-screen-md mb-8 lg:mb-16">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold">
-              My Technology Stack...
+              My Go To Technology Stack...
             </h2>
 
             <p className="text-gray-500 sm:text-xl dark:text-gray-400">
@@ -264,6 +264,76 @@ const TechStack = () => {
           </div>
         </FadeInStagger>
       </div>
+
+      <FadeInStagger>
+        <div className=" py-24 sm:py-32">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto max-w-2xl lg:max-w-none">
+              <FadeIn>
+                <h2 className="text-lg font-semibold leading-8 text-gray-900 dark:text-gray-300">
+                  More of my favourite tools...
+                </h2>
+              </FadeIn>
+              <div className="mx-auto mt-10 grid grid-cols-4 items-start gap-x-8 gap-y-10 sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:grid-cols-6">
+                <FadeIn>
+                  <img
+                    className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
+                    src="https://svgl.app/library/supabase.svg"
+                    alt="Transistor"
+                    width={158}
+                    height={48}
+                  />
+                </FadeIn>
+                <FadeIn>
+                  <img
+                    className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
+                    src="https://svgl.app/library/postgresql.svg"
+                    alt="Reform"
+                    width={158}
+                    height={48}
+                  />
+                </FadeIn>
+                <FadeIn>
+                  <img
+                    className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
+                    src="https://svgl.app/library/react.svg"
+                    alt="Tuple"
+                    width={158}
+                    height={48}
+                  />
+                </FadeIn>
+                <FadeIn>
+                  <img
+                    className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
+                    src="https://svgl.app/library/pocket-base.svg"
+                    alt="SavvyCal"
+                    width={158}
+                    height={48}
+                  />
+                </FadeIn>
+                <FadeIn>
+                  <img
+                    className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
+                    src="https://svgl.app/library/playwright.svg"
+                    alt="Statamic"
+                    width={158}
+                    height={48}
+                  />
+                </FadeIn>
+                <FadeIn>
+                  <img
+                    className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
+                    src="https://svgl.app/library/hugging_face.svg"
+                    alt="Statamic"
+                    width={158}
+                    height={48}
+                  />
+                </FadeIn>
+              </div>
+            </div>
+          </div>
+        </div>
+      </FadeInStagger>
     </section>
   );
 };
