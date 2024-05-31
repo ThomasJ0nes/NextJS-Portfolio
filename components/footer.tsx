@@ -27,14 +27,7 @@ const Footer = () => {
                 Github
               </a>
             </li>
-            <li>
-              <a
-                href="https://twitter.com/TomyJxyz"
-                className="hover:underline me-4 md:me-6"
-              >
-                Twitter
-              </a>
-            </li>
+
             <li>
               <a
                 href="https://www.ecryptify.com"
