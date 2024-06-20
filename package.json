@@ -19,7 +19,6 @@
     "@react-three/fiber": "^8.15.19",
     "@vercel/analytics": "^1.1.1",
     "@vercel/kv": "^1.0.1",
-    "@vercel/postgres": "^0.5.1",
     "@vercel/speed-insights": "^1.0.2",
     "axios": "^1.6.3",
     "class-variance-authority": "^0.7.0",

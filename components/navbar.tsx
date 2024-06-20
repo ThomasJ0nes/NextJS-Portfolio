@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
+        <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img
             src="https://github.com/ThomasJ0nes.png"
             className="h-8 w-8 rounded-full "
@@ -57,6 +57,14 @@ const Navbar = () => {
           <ul className="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
             <li>
               <a
+                href="/portfolio"
+                className="block mt-2 py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              >
+                Portfolio
+              </a>
+            </li>
+            <li>
+              <a
                 href="https://github.com/ThomasJ0nes"
                 className="block py-2 mt-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
@@ -64,14 +72,6 @@ const Navbar = () => {
               </a>
             </li>
 
-            <li>
-              <a
-                href="https://www.linkedin.com/in/thomas-jones-106920245/"
-                className="block mt-2 py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                LinkedIn
-              </a>
-            </li>
             <li>
               <DialogDemo />
             </li>
