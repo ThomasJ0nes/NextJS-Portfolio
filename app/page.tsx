@@ -3,6 +3,7 @@ import { Globe } from "@/components/SpinningGlobe";
 import Accordion from "@/components/accordion";
 import Footer from "@/components/footer";
 import Hero from "@/components/hero";
+import { HoverBorderGradient } from "@/components/hover-border-gradient";
 import Navbar from "@/components/navbar";
 import Project from "@/components/projectEcryptify";
 import TechStack from "@/components/techStack";
@@ -39,10 +40,31 @@ export default function Home() {
       <TechStack />
       <Globe />
 
-      <Project />
-      <LFGHO_Project />
+      <section>
+        <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 mt-10 mb-44">
+          <div className="mx-auto max-w-screen-sm text-center">
+            <h2 className="mb-4 text-5xl tracking-tight font-extrabold leading-tight text-gray-900 dark:text-white">
+              View my Projects
+            </h2>
+            <p className="mb-6 font-light text-gray-500 dark:text-gray-400 md:text-lg">
+              Here are some of the projects I have worked on, I have experience
+              in building full stack web apps, websites payment intergrations
+              and web3 connections.
+            </p>
+            <div className=" flex justify-center text-center">
+              <HoverBorderGradient
+                containerClassName="rounded-full"
+                as="button"
+                className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
+              >
+                <a href="/portfolio">View Portfolio</a>
+              </HoverBorderGradient>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <main className="relative mb-10 flex flex-col justify-center overflow-hidden">
+      <main className="relative mb-10 mt-20 flex flex-col justify-center overflow-hidden">
         <div className="w-full max-w-2xl mx-auto">
           <h1 className="text-2xl font-bold  mb-4 text-center">Questions</h1>
 
