@@ -129,7 +129,7 @@ const page = () => {
                   Web Development Agency Website
                 </p>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                  A modern web devlopement agency site i built using NextJS 14
+                  A modern web development agency site i built using NextJS 14
                   and tailwind, i went for a modern clean feel with subtle
                   animations and transtions.
                 </p>
