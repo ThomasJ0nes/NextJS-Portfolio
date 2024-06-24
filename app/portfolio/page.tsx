@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { StickyScroll } from "@/components/Sticky-Scroll-Reveal";
 import Image from "next/image";
 import Footer from "@/components/footer";
-import { link } from "fs";
+import Link from "next/link";
 
 const content = [
   {
@@ -116,6 +116,45 @@ const page = () => {
       <div className="p-10 mt-10">
         <StickyScroll content={content} />
       </div>
+
+      <div className="overflow-hidden mt-44  py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start">
+            <div className="lg:pr-4 lg:pt-4">
+              <div className="lg:max-w-lg">
+                <h2 className="text-base font-semibold leading-7 text-indigo-600">
+                  Further project
+                </h2>
+                <p className="mt-2 text-3xl font-bold tracking-tight dark:text-gray-300 text-gray-900 sm:text-4xl">
+                  Web Development Agency Website
+                </p>
+                <p className="mt-6 text-lg leading-8 text-gray-600">
+                  A modern web devlopement agency site i built using NextJS 14
+                  and tailwind, i went for a modern clean feel with subtle
+                  animations and transtions.
+                </p>
+                <div className="mt-8">
+                  <a
+                    href="https://www.studioiq.co.uk/"
+                    className="inline-flex rounded-md dark:bg-white dark:text-black px-3.5 py-2.5 text-sm font-semibold bg-black text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  >
+                    View Site
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <img
+              src="/studioiq-sc.png"
+              alt="Product screenshot"
+              className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:ml-0"
+              width={2432}
+              height={1442}
+            />
+          </div>
+        </div>
+      </div>
+
       <div className="mt-56">
         {" "}
         <Footer />
