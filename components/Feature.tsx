@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
@@ -7,78 +6,65 @@ import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { IconBrandYoutubeFilled } from "@tabler/icons-react";
 import Link from "next/link";
-import Navbar from "@/components/navbar";
-import { ExpandableCardDemo } from "@/components/CardPotfolio";
-import Footer from "@/components/footer";
-import { FadeIn } from "@/components/FadeIn";
 
-export default function FeaturesSectionDemo() {
+export function FeaturesSectionDemo() {
   const features = [
     {
-      title: "Dynamic Dashboards",
+      title: "Track issues effectively",
       description:
-        "I build interactive scaleable dashbaords for tracking, managing and editing.",
+        "Track and manage your project issues with ease using our intuitive interface.",
       skeleton: <SkeletonOne />,
       className:
         "col-span-1 lg:col-span-4 border-b lg:border-r dark:border-neutral-800",
     },
     {
-      title: "Modern Designs and Animations",
-      description: "A balance of simple clean designs with subtle animations.",
+      title: "Capture pictures with AI",
+      description:
+        "Capture stunning photos effortlessly using our advanced AI technology.",
       skeleton: <SkeletonTwo />,
       className: "border-b col-span-1 lg:col-span-2 dark:border-neutral-800",
     },
     {
-      title: "View my hackthon winner project",
+      title: "Watch our AI on YouTube",
       description:
-        "I enjoy as a side hobby to particpate in blockchain and web3 async hackathons as a great way to enhance my skills and connect with other devs.",
+        "Whether its you or Tyler Durden, you can get to know about our product on YouTube",
       skeleton: <SkeletonThree />,
       className:
         "col-span-1 lg:col-span-3 lg:border-r  dark:border-neutral-800",
     },
     {
-      title: "Secure and scalabel cloud hosting",
+      title: "Deploy in seconds",
       description:
-        "I can work with many cloud hosting platforms to deploy to ensuring scalability and security.",
+        "With our blazing fast, state of the art, cutting edge, we are so back cloud servies (read AWS) - you can deploy your model in seconds.",
       skeleton: <SkeletonFour />,
       className: "col-span-1 lg:col-span-3 border-b lg:border-none",
     },
   ];
   return (
-    <>
-      <Navbar />
-      <div className="relative z-20 py-10 lg:py-40 max-w-7xl mx-auto">
-        <div className="px-8">
-          <FadeIn>
-            <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black dark:text-white">
-              My Portfolio
-            </h4>
+    <div className="relative z-20 py-10 lg:py-40 max-w-7xl mx-auto">
+      <div className="px-8">
+        <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black dark:text-white">
+          Packed with thousands of features
+        </h4>
 
-            <p className="text-sm lg:text-base  max-w-2xl  my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300">
-              From dynamic dashbaords and payment gateways to modern interactive
-              designs and animations, my passion if full stack web development
-              creating interactive great looking websites with great features.
-            </p>
-          </FadeIn>
-        </div>
-
-        <div className="relative ">
-          <div className="grid grid-cols-1 lg:grid-cols-6 mt-12 xl:border rounded-md dark:border-neutral-800">
-            {features.map((feature) => (
-              <FeatureCard key={feature.title} className={feature.className}>
-                <FeatureTitle>{feature.title}</FeatureTitle>
-                <FeatureDescription>{feature.description}</FeatureDescription>
-                <div className=" h-full w-full">{feature.skeleton}</div>
-              </FeatureCard>
-            ))}
-          </div>
-        </div>
+        <p className="text-sm lg:text-base  max-w-2xl  my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300">
+          From Image generation to video generation, Everything AI has APIs for
+          literally everything. It can even create this website copy for you.
+        </p>
       </div>
 
-      <ExpandableCardDemo />
-
-      <Footer />
-    </>
+      <div className="relative ">
+        <div className="grid grid-cols-1 lg:grid-cols-6 mt-12 xl:border rounded-md dark:border-neutral-800">
+          {features.map((feature) => (
+            <FeatureCard key={feature.title} className={feature.className}>
+              <FeatureTitle>{feature.title}</FeatureTitle>
+              <FeatureDescription>{feature.description}</FeatureDescription>
+              <div className=" h-full w-full">{feature.skeleton}</div>
+            </FeatureCard>
+          ))}
+        </div>
+      </div>
+    </div>
   );
 }
 
@@ -125,10 +111,10 @@ export const SkeletonOne = () => {
         <div className="flex flex-1 w-full h-full flex-col space-y-2  ">
           {/* TODO */}
           <Image
-            src="/jobCymruDash.png"
+            src="/linear.webp"
             alt="header"
-            width={1500}
-            height={1500}
+            width={800}
+            height={800}
             className="h-full w-full aspect-square object-cover object-left-top rounded-sm"
           />
         </div>
@@ -143,7 +129,7 @@ export const SkeletonOne = () => {
 export const SkeletonThree = () => {
   return (
     <Link
-      href="https://ethglobal.com/showcase/gho-yearnv3-vault-wau9w"
+      href="https://www.youtube.com/watch?v=RPa3_AD1_Vs"
       target="__blank"
       className="relative flex gap-10  h-full group/image"
     >
@@ -152,10 +138,10 @@ export const SkeletonThree = () => {
           {/* TODO */}
           <IconBrandYoutubeFilled className="h-20 w-20 absolute z-10 inset-0 text-red-500 m-auto " />
           <Image
-            src="/LFGHO-WinnerPage.png"
+            src="https://assets.aceternity.com/fireship.jpg"
             alt="header"
-            width={1500}
-            height={1500}
+            width={800}
+            height={800}
             className="h-full w-full aspect-square object-cover object-center rounded-sm blur-none group-hover/image:blur-md transition-all duration-200"
           />
         </div>
@@ -166,11 +152,11 @@ export const SkeletonThree = () => {
 
 export const SkeletonTwo = () => {
   const images = [
-    "/project-jobCymru.png",
-    "/project-Ecryptify.png",
-    "/project-LFGHO.png",
-    "/project-LFGHO.png",
-    "/project-LFGHO.png",
+    "https://images.unsplash.com/photo-1517322048670-4fba75cbbb62?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1573790387438-4da905039392?q=80&w=3425&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1555400038-63f5ba517a47?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1554931670-4ebfabf6e7a9?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1546484475-7f7bd55792da?q=80&w=2581&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   ];
 
   const imageVariants = {
