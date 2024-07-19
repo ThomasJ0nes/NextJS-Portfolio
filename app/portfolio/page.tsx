@@ -118,7 +118,7 @@ const FeatureDescription = ({ children }: { children?: React.ReactNode }) => {
   );
 };
 
-export const SkeletonOne = () => {
+const SkeletonOne = () => {
   return (
     <div className="relative flex py-8 px-2 gap-10 h-full">
       <div className="w-full  p-5  mx-auto bg-white dark:bg-neutral-900 shadow-2xl group h-full">
@@ -140,7 +140,7 @@ export const SkeletonOne = () => {
   );
 };
 
-export const SkeletonThree = () => {
+const SkeletonThree = () => {
   return (
     <Link
       href="https://ethglobal.com/showcase/gho-yearnv3-vault-wau9w"
@@ -164,7 +164,7 @@ export const SkeletonThree = () => {
   );
 };
 
-export const SkeletonTwo = () => {
+const SkeletonTwo = () => {
   const images = [
     "/project-jobCymru.png",
     "/project-Ecryptify.png",
@@ -239,7 +239,7 @@ export const SkeletonTwo = () => {
   );
 };
 
-export const SkeletonFour = () => {
+const SkeletonFour = () => {
   return (
     <div className="h-60 md:h-60  flex flex-col items-center relative bg-transparent dark:bg-transparent mt-10">
       <Globe className="absolute -right-10 md:-right-10 -bottom-80 md:-bottom-72" />
@@ -247,7 +247,7 @@ export const SkeletonFour = () => {
   );
 };
 
-export const Globe = ({ className }: { className?: string }) => {
+const Globe = ({ className }: { className?: string }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
