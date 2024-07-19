@@ -336,11 +336,11 @@ const cards = [
           I recently developed a cutting-edge web development agency site using
           NextJS 14 and Tailwind CSS. My focus was on creating a modern and
           clean aesthetic, ensuring an intuitive user experience. I incorporated
-          subtle animations and smooth transitions to enhance the site's
+          subtle animations and smooth transitions to enhance the site&apos;s
           interactivity without overwhelming the user. The combination of
-          NextJS's powerful framework and Tailwind's utility-first approach
-          allowed me to efficiently build a highly responsive and visually
-          appealing website.
+          NextJS&apos;s powerful framework and Tailwind&apos;s utility-first
+          approach allowed me to efficiently build a highly responsive and
+          visually appealing website.
           <br />
           In addition to the main site, I implemented a blog page using MDX
           (Markdown with JSX). This approach allowed me to seamlessly integrate
