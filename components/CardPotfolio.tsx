@@ -244,7 +244,7 @@ const cards = [
     title: "Ecryptify Recruitment Agency Site",
     src: "/project-Ecryptify.png",
     ctaText: "Read More",
-    ctaLink: "https://ecryptify.com/",
+    ctaLink: "https://www.ecryptify.com/",
     content: () => {
       return (
         <p>
