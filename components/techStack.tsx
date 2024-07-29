@@ -104,39 +104,37 @@ const TechStack = () => {
             <FadeIn>
               <div>
                 <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                  <img src="typescript.svg"></img>
+                  <img src="netCore.png"></img>
                 </div>
                 <HoverCard>
                   <HoverCardTrigger>
                     <h3 className="mb-2 underline text-xl font-bold dark:text-white">
-                      TypeScript
+                      Mircosoft .NET
                     </h3>
                   </HoverCardTrigger>
 
                   <HoverCardContent>
                     <div className="flex justify-between space-x-4 w-full">
                       <Avatar>
-                        <AvatarImage src="typescript.svg" />
+                        <AvatarImage src="NETcore.png" />
                         <AvatarFallback>VC</AvatarFallback>
                       </Avatar>
                       <div className="space-y-2">
-                        <h4 className="text-sm font-semibold">@Typescript</h4>
+                        <h4 className="text-sm font-semibold">@ASP.NET CORE</h4>
                         <p className="text-sm">
-                          Created by Anders Hejlsberg at Microsoft in 2010
-                          Typescript is a superset of Javascript that adds
-                          static typing to the language. It is a powerful
-                          language that is used to create large scale
-                          applications. It is a very fast and reliable language
-                          and its popularity is growing.
+                          Created by Microsoft ASP.NET Core is a cross-platform,
+                          high-performance, open-source framework for building
+                          modern, cloud-enabled, Internet-connected apps.
                         </p>
                       </div>
                     </div>
                   </HoverCardContent>
                 </HoverCard>
                 <p className="text-gray-500 dark:text-gray-400">
-                  I have been using typescript for a few months now and I am
-                  starting to get comfortable with it. I am still learning the
-                  language but I am confident in my ability to use it.
+                  .NET is the framework i first started of in when beginning my
+                  development journey and i still use it today in conjuction
+                  with SQL server. I love to use .NET due to the flexbility and
+                  simplicity it brings to web development.
                 </p>
               </div>
             </FadeIn>
@@ -222,42 +220,41 @@ const TechStack = () => {
             <FadeIn>
               <div>
                 <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                  <img className="h-16" src="eth.svg"></img>
+                  <img className="h-16" src="/sql-server.svg"></img>
                 </div>
 
                 <HoverCard>
                   <HoverCardTrigger>
                     <h3 className="mb-2 underline text-xl font-bold dark:text-white">
-                      Solidity
+                      SQL Server
                     </h3>
                   </HoverCardTrigger>
 
                   <HoverCardContent>
                     <div className="flex justify-between space-x-4 w-full">
                       <Avatar>
-                        <AvatarImage src="eth.svg" />
+                        <AvatarImage src="/sql-server.svg" />
                         <AvatarFallback>VC</AvatarFallback>
                       </Avatar>
                       <div className="space-y-2">
-                        <h4 className="text-sm font-semibold">@Solidity</h4>
+                        <h4 className="text-sm font-semibold">@SQL Server</h4>
                         <p className="text-sm">
-                          Created by Gavin Wood, Solidity is an object-oriented
-                          programming language for writing smart contracts. It
-                          is used for implementing smart contracts on various
-                          blockchain platforms, most notably, Ethereum. It is a
-                          statically typed language that supports inheritance,
-                          libraries and complex user-defined types among other
-                          features.
+                          Microsoft SQL Server is a proprietary relational
+                          database management system developed by Microsoft. As
+                          a database server, it is a software product with the
+                          primary function of storing and retrieving data.
                         </p>
                       </div>
                     </div>
                   </HoverCardContent>
                 </HoverCard>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Solidity is a new endeavour for me, as the web3 space is
-                  growing I am learning solidity to build smart contracts and
-                  decentralised applications. Staying ahead of the curve is
-                  important to me and anyone who wants to be a developer.
+                  I have strong skills in writing T-SQL queries to facilitate
+                  data extraction and transformation for SQL Server Reporting
+                  Services (SSRS) reports. My expertise includes designing
+                  complex reports using both T-SQL and report builder. I use SQL
+                  for my personal projects when i want more control over my
+                  data.
                 </p>
               </div>
             </FadeIn>
@@ -271,14 +268,14 @@ const TechStack = () => {
             <div className="mx-auto max-w-2xl lg:max-w-none">
               <FadeIn>
                 <h2 className="text-lg font-semibold leading-8 text-gray-900 dark:text-gray-300">
-                  More of my favourite tools...
+                  Other tools and languages I use...
                 </h2>
               </FadeIn>
               <div className="mx-auto mt-10 grid grid-cols-4 items-start gap-x-8 gap-y-10 sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:grid-cols-6">
                 <FadeIn>
                   <img
                     className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
-                    src="https://svgl.app/library/supabase.svg"
+                    src="https://svgl.app/library/csharp.svg"
                     alt="Transistor"
                     width={158}
                     height={48}
@@ -305,7 +302,7 @@ const TechStack = () => {
                 <FadeIn>
                   <img
                     className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
-                    src="https://svgl.app/library/pocket-base.svg"
+                    src="https://svgl.app/library/typescript.svg"
                     alt="SavvyCal"
                     width={158}
                     height={48}
@@ -314,7 +311,7 @@ const TechStack = () => {
                 <FadeIn>
                   <img
                     className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
-                    src="https://svgl.app/library/playwright.svg"
+                    src="https://svgl.app/library/azure.svg"
                     alt="Statamic"
                     width={158}
                     height={48}
@@ -323,7 +320,7 @@ const TechStack = () => {
                 <FadeIn>
                   <img
                     className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
-                    src="https://svgl.app/library/hugging_face.svg"
+                    src="https://svgl.app/library/nodejs.svg"
                     alt="Statamic"
                     width={158}
                     height={48}
