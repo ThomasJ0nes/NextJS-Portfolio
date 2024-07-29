@@ -104,7 +104,7 @@ const TechStack = () => {
             <FadeIn>
               <div>
                 <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                  <img src="netCore.png"></img>
+                  <img src="https://icon.icepanel.io/Technology/svg/.NET-core.svg"></img>
                 </div>
                 <HoverCard>
                   <HoverCardTrigger>
@@ -116,7 +116,7 @@ const TechStack = () => {
                   <HoverCardContent>
                     <div className="flex justify-between space-x-4 w-full">
                       <Avatar>
-                        <AvatarImage src="NETcore.png" />
+                        <AvatarImage src="https://icon.icepanel.io/Technology/svg/.NET-core.svg" />
                         <AvatarFallback>VC</AvatarFallback>
                       </Avatar>
                       <div className="space-y-2">
