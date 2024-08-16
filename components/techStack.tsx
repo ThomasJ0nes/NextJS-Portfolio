@@ -17,10 +17,10 @@ const TechStack = () => {
             </h2>
 
             <p className="text-gray-500 sm:text-xl dark:text-gray-400">
-              Below is the list of my strongest skills and technologies I use to
-              build my projects. However i am self taught and this is only my
-              strongest skills, I am always learning new technologies and skills
-              to improve my development skills.
+              Below is a list of my strongest skills and the technologies I use
+              to build my projects. As a self-taught developer, these are my
+              core strengths, but I'm continually learning new technologies and
+              refining my skills to enhance my development capabilities
             </p>
           </div>
         </FadeIn>
