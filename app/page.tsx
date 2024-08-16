@@ -7,6 +7,7 @@ import { HoverBorderGradient } from "@/components/hover-border-gradient";
 import Navbar from "@/components/navbar";
 import Project from "@/components/projectEcryptify";
 import TechStack from "@/components/techStack";
+import { Cover } from "@/components/ui/cover";
 import Image from "next/image";
 
 const faqs = [
@@ -44,7 +45,7 @@ export default function Home() {
         <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 mt-10 mb-44">
           <div className="mx-auto max-w-screen-sm text-center">
             <h2 className="mb-4 text-5xl tracking-tight font-extrabold leading-tight text-gray-900 dark:text-white">
-              View my Projects
+              View my <Cover>Projects!</Cover>
             </h2>
             <p className="mb-6 font-light text-gray-500 dark:text-gray-400 md:text-lg">
               Here are some of the projects I have worked on, I have experience
