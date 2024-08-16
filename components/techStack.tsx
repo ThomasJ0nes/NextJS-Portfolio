@@ -271,7 +271,7 @@ const TechStack = () => {
                   Other tools and languages I use...
                 </h2>
               </FadeIn>
-              <div className="mx-auto mt-10 grid grid-cols-4 items-start gap-x-8 gap-y-10 sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:grid-cols-6">
+              <div className="mx-auto mt-10 grid grid-cols-4 items-start gap-x-8 gap-y-10 sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:grid-cols-8">
                 <FadeIn>
                   <img
                     className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
@@ -311,7 +311,7 @@ const TechStack = () => {
                 <FadeIn>
                   <img
                     className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
-                    src="https://svgl.app/library/azure.svg"
+                    src="https://svgl.app/library/html5.svg"
                     alt="Statamic"
                     width={158}
                     height={48}
@@ -320,8 +320,33 @@ const TechStack = () => {
                 <FadeIn>
                   <img
                     className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
-                    src="https://svgl.app/library/nodejs.svg"
+                    src="https://svgl.app/library/css.svg"
                     alt="Statamic"
+                    width={158}
+                    height={48}
+                  />
+                </FadeIn>
+                <FadeIn>
+                  <img
+                    className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
+                    src="https://svgl.app/library/wordpress.svg"
+                    alt="Statamic"
+                    width={158}
+                    height={48}
+                  />
+                </FadeIn>
+                <FadeIn>
+                  <img
+                    className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1 dark:hidden"
+                    src="https://svgl.app/library/php.svg"
+                    alt="Statamic"
+                    width={158}
+                    height={48}
+                  />
+                  <img
+                    className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1 hidden dark:block"
+                    src="https://svgl.app/library/php_dark.svg"
+                    alt="Statamic Dark"
                     width={158}
                     height={48}
                   />

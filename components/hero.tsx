@@ -45,7 +45,7 @@ const Hero = () => {
             ></h1>
             <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-lg dark:text-gray-400">
               I am a Full Stack Front End Developer with a passion for creating
-              beautiful, responsive and accessible websites and applications.
+              beautiful, responsive, accessible websites and applications.
             </p>
           </div>
           <div className=" lg:block lg:mt-0 lg:col-span-5">

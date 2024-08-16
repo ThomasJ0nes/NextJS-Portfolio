@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { DialogDemo } from "./dialogue";
 import { ModeToggle } from "./themeToggle";
+import { Github, GalleryVerticalEnd } from "lucide-react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -60,7 +61,7 @@ const Navbar = () => {
                 href="/portfolio"
                 className="block mt-2 py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
-                Portfolio
+                Portfolio <GalleryVerticalEnd className="ml-1 inline" />
               </a>
             </li>
             <li>
@@ -68,7 +69,7 @@ const Navbar = () => {
                 href="https://github.com/ThomasJ0nes"
                 className="block py-2 mt-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
-                Github
+                Github <Github className="ml-1 inline" />
               </a>
             </li>
 
