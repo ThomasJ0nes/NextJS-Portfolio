@@ -44,8 +44,13 @@ const Hero = () => {
               className="max-w-2xl mb-4 text-3xl sm:text-2xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"
             ></h1>
             <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-lg dark:text-gray-400">
-              I am a Full Stack Front End Developer with a passion for creating
-              beautiful, responsive, accessible websites and applications.
+              I am a self taught Full Stack Developer from{" "}
+              <img
+                className="inline h-8"
+                src="https://flagpedia.net/data/flags/emoji/apple/160x160/gb-wls.png"
+              />{" "}
+              with a passion for creating beautiful, responsive, accessible
+              websites and applications.
             </p>
           </div>
           <div className=" lg:block lg:mt-0 lg:col-span-5">

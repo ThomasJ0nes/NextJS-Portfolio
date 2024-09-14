@@ -276,7 +276,7 @@ const TechStack = () => {
                   <img
                     className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
                     src="https://svgl.app/library/csharp.svg"
-                    alt="Transistor"
+                    alt="csharp"
                     width={158}
                     height={48}
                   />
@@ -285,7 +285,7 @@ const TechStack = () => {
                   <img
                     className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
                     src="https://svgl.app/library/postgresql.svg"
-                    alt="Reform"
+                    alt="postgresql"
                     width={158}
                     height={48}
                   />
@@ -294,7 +294,7 @@ const TechStack = () => {
                   <img
                     className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
                     src="https://svgl.app/library/react.svg"
-                    alt="Tuple"
+                    alt="react"
                     width={158}
                     height={48}
                   />
@@ -303,7 +303,7 @@ const TechStack = () => {
                   <img
                     className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
                     src="https://svgl.app/library/typescript.svg"
-                    alt="SavvyCal"
+                    alt="typescript"
                     width={158}
                     height={48}
                   />
@@ -312,7 +312,7 @@ const TechStack = () => {
                   <img
                     className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
                     src="https://svgl.app/library/html5.svg"
-                    alt="Statamic"
+                    alt="HTML"
                     width={158}
                     height={48}
                   />
@@ -321,7 +321,7 @@ const TechStack = () => {
                   <img
                     className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
                     src="https://svgl.app/library/css.svg"
-                    alt="Statamic"
+                    alt="CSS"
                     width={158}
                     height={48}
                   />
@@ -329,24 +329,17 @@ const TechStack = () => {
                 <FadeIn>
                   <img
                     className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
-                    src="https://svgl.app/library/wordpress.svg"
-                    alt="Statamic"
+                    src="https://svgl.app/library/figma.svg"
+                    alt="figma"
                     width={158}
                     height={48}
                   />
                 </FadeIn>
                 <FadeIn>
                   <img
-                    className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1 dark:hidden"
-                    src="https://svgl.app/library/php.svg"
-                    alt="Statamic"
-                    width={158}
-                    height={48}
-                  />
-                  <img
-                    className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1 hidden dark:block"
-                    src="https://svgl.app/library/php_dark.svg"
-                    alt="Statamic Dark"
+                    className="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
+                    src="https://svgl.app/library/supabase.svg"
+                    alt="supabase"
                     width={158}
                     height={48}
                   />
